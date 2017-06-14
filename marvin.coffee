@@ -128,8 +128,7 @@ module.exports = (robot) ->
   robot.respond /(.*)(wait+ing)(.*)/, (msg) ->
     msg.send "The first ten million years were the worst. And the second ten million: they were the worst, too. The third ten million I didn't enjoy at all. After that, I went into a bit of a decline."
 
-  ## https://github.com/github/hubot-scripts/blob/master/src/scripts/insult.coffee
-  robot.respond /insult (.*)/i, (msg) ->
+  robot.respond /compliment (.*)/i, (msg) ->
     name = msg.match[1].trim()
     msg.send "#{name}: is one of the least benightedly unintelligent life forms it has been my profound lack of pleasure not to be able to avoid meeting."
 
